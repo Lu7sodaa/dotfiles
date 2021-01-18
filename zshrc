@@ -51,18 +51,19 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git ruby sublime rails node npm osx postgres python pip github django)
+plugins=(git ruby sublime rails node npm osx postgres python pip github django autojump)
 
 #Autojump
 [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
 source $ZSH/oh-my-zsh.sh
+
 
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+# export LANG=fr_FR.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -90,4 +91,10 @@ export EDITOR='stt'
 
 alias pencil="npm start --prefix /Users/lucaspiessat/pencil"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --kiosk"
+alias deezer="/Users/lucaspiessat/code/SMLoadr-macos-x64"
+alias fire="open -a /Applications/Firefox.app"
+alias note="open -a /Users/lucaspiessat/Applications/Synology\ Note\ Station\ Client.app"
+alias ztt="open -a /Applications/Zettlr.app"
+alias dns="sudo killall -HUP mDNSResponder"
+
 
